@@ -10,26 +10,30 @@ String reservacionToJson(Reservacion data) => json.encode(data.toJson());
 
 class Reservacion {
     Reservacion({
+        this.idReservacion,
         this.horario,
         this.precio,
         this.foto,
         this.estado,
     });
 
-    DateTime? horario;
-    String? precio;
+    String? idReservacion;
+    String? horario;
+    double? precio;
     String? foto;
     String? estado;
 
     factory Reservacion.fromJson(Map<String, dynamic> json) => Reservacion(
-        horario: DateTime.parse(json["horario"]),
-        precio: json["precio"],
+        idReservacion: json["idReservacion"],
+        horario: json["horario"],
+        precio: json["precio"].toDouble(),
         foto: json["foto"],
         estado: json["estado"],
     );
 
     Map<String, dynamic> toJson() => {
-        "horario": horario.toString(),
+        "idReservacion": idReservacion,
+        "horario": horario,
         "precio": precio,
         "foto": foto,
         "estado": estado,
