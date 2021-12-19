@@ -1,5 +1,3 @@
-import 'package:ab_sport/src/pages/home_page.dart';
-import 'package:ab_sport/src/pages/reservacion_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -26,7 +24,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: HomePage(),
+      home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
