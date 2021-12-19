@@ -1,6 +1,6 @@
 import 'package:ab_sport/src/models/reservacion_models.dart';
 import 'package:ab_sport/src/services/reservacion_service.dart';
-import 'package:ab_sport/src/widgest/cards/Reservacio_card.dart';
+import 'package:ab_sport/src/widgest/cards/reservacion_card.dart';
 import 'package:flutter/material.dart';
 
 class ListaReservacionWidget extends StatefulWidget {

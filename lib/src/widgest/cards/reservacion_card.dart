@@ -1,4 +1,3 @@
-
 // ignore_for_file: file_names
 
 import 'package:ab_sport/src/models/reservacion_models.dart';
@@ -12,12 +11,8 @@ class ReservacionCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: ListTile(
-        title: Text(rese.precio.toString()),
-        subtitle: Text(rese.foto ?? ""),
-        //   leading:
-        //        Image.asset("assets/images/" +
-        //                 Standard.getFisioImage(inco.image) +
-        //                 ".png"),
+        leading: Text("id reservacion: " + rese.idReservacion.toString()),
+        subtitle: Text("Precio: " + rese.precio.toString()),
         trailing: Text(rese.horario ?? ""),
       ),
     );

@@ -7,6 +7,7 @@ class ItemMenu {
   IconData icon;
   ItemMenu(this.icon, this.title);
 }
+
 List<ItemMenu> menuOptions = [
   ItemMenu(Icons.home, "Catalogo"),
   ItemMenu(Icons.history_sharp, "Reservacion"),
@@ -16,6 +17,7 @@ List<ItemMenu> menuOptions = [
 ];
 List<Widget> homeWidgets = [
   const LocationWidget(),
+  const Text("Aqui debe ir la reservacion"),
   const ListaReservacionWidget()
   //const MaterialesWidget()
 ];

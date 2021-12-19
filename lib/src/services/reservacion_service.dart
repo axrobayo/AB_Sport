@@ -19,6 +19,7 @@ class ReservacionService {
       }
       return items;
     } on Exception catch (e) {
+      // ignore: avoid_print
       print("Exception $e");
       return items;
     }
