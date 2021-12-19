@@ -11,9 +11,10 @@ class ReservacionCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: ListTile(
-        leading: Text("id reservacion: " + rese.idReservacion.toString()),
+        title: Text("id reservacion: " + rese.idReservacion.toString()),
         subtitle: Text("Precio: " + rese.precio.toString()),
         trailing: Text(rese.horario ?? ""),
+        leading: Text("Estado: "+rese.estado.toString()),
       ),
     );
   }
